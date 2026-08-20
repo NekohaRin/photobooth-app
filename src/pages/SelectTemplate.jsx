@@ -41,7 +41,7 @@ export default function SelectTemplate({ onTemplateSelected }) {
 
       <div className="mb-6 grid grid-cols-2 gap-4">
       {templates.map((tpl) => {
-  const previewImage = tpl.overlay_image_url || tpl.background_image_url
+const previewImage = tpl.thumbnail_url || tpl.overlay_image_url || tpl.background_image_url
 
   return (
     <button
